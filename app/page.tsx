@@ -24,7 +24,6 @@ import Hero from "@/components/Hero";
 import Painpoints from "@/components/ui/painpoints-section";
 import DesiresSection from "@/components/ui/desires-section";
 import HowItWorks from "@/components/ui/how-it-works";
-import Footer from "@/components/Footer";
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -48,7 +47,6 @@ export default function LandingPage() {
           <ArrowRight className="ml-2 w-5 h-5" />
         </Button>
       </div>
-      <Footer />
     </div>
   );
 }
