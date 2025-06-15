@@ -1,6 +1,12 @@
 import { Button } from "./ui/button";
 import { Mail } from "lucide-react";
-import { SignInButton } from "@clerk/nextjs";
+import {
+  SignedOut,
+  SignInButton,
+  UserButton,
+  SignedIn,
+  SignUpButton,
+} from "@clerk/nextjs";
 export default function Navbar() {
   return (
     <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
@@ -13,11 +19,23 @@ export default function Navbar() {
             ClearEmail Ai
           </span>
         </div>
-        <SignInButton>
-          <Button variant="outline" className="hidden sm:flex">
-            Sign In
-          </Button>
-        </SignInButton>
+        <div className="flex items-center space-x-2">
+          <SignedOut>
+            <SignInButton>
+              <Button variant="outline" className="hidden sm:flex">
+                Sign In
+              </Button>
+            </SignInButton>
+            <SignUpButton>
+              <Button variant="default" className="hidden sm:flex">
+                Sign Up
+              </Button>
+            </SignUpButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </div>
       </div>
     </header>
   );

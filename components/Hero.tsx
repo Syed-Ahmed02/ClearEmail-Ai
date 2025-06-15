@@ -11,7 +11,7 @@ export default function Hero() {
             <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-100">Stop Drowning in Your Inbox</Badge>
 
             <h1 className="text-4xl lg:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-              AI Email always finds a way to{" "}
+              Email always finds a way to{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
                 take over my day
               </span>
